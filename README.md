@@ -5,4 +5,5 @@ docker-jdk
 
 ## Supported JDK versions
 - JDK8 - ```docker pull gmaslowski\jdk:8```
+- JDK9 - ```docker pull gmaslowski\jdk:9```
 
