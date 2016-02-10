@@ -1,4 +1,4 @@
-docker-jdk
+docker-java
 ==========
 
 ## Java Development Kit
