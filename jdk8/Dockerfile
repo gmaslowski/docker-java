@@ -1,4 +1,4 @@
-# AlpineLinux 3.3 with a glibc-2.21 and Oracle JDK8
+# AlpineLinux 3.5 with a glibc-2.21 and Oracle JDK8
 FROM alpine:3.5
 MAINTAINER Greg Maslowski gregmaslowski@gmail.com
 
