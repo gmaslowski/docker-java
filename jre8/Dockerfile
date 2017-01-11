@@ -1,5 +1,5 @@
-# AlpineLinux 3.3 with a glibc-2.21 and Oracle JRE8
-FROM alpine:3.3
+# AlpineLinux 3.5 with a glibc-2.21 and Oracle JRE8
+FROM alpine:3.5
 MAINTAINER Greg Maslowski gregmaslowski@gmail.com
 
 # https://github.com/gliderlabs/docker-alpine/issues/11:
@@ -21,7 +21,7 @@ RUN apk --update add curl ca-certificates tar
 
 # Java Version
 ENV JAVA_VERSION_MAJOR 8
-ENV JAVA_VERSION_MINOR 92
+ENV JAVA_VERSION_MINOR 111
 ENV JAVA_VERSION_BUILD 14
 ENV JAVA_PACKAGE       jre
 
