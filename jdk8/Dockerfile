@@ -21,14 +21,14 @@ RUN apk --update add curl ca-certificates tar
 
 # Java Version
 ENV JAVA_VERSION_MAJOR 8
-ENV JAVA_VERSION_MINOR 111
-ENV JAVA_VERSION_BUILD 14
+ENV JAVA_VERSION_MINOR 121
+ENV JAVA_VERSION_BUILD 13
 ENV JAVA_PACKAGE       jdk
 
 # Download and unarchive Java
 RUN mkdir /opt && curl -jksSLH "Cookie: oraclelicense=accept-securebackup-cookie"\
-  http://download.oracle.com/otn-pub/java/jdk/${JAVA_VERSION_MAJOR}u${JAVA_VERSION_MINOR}-b${JAVA_VERSION_BUILD}/${JAVA_PACKAGE}-${JAVA_VERSION_MAJOR}u${JAVA_VERSION_MINOR}-linux-x64.tar.gz \
-    | tar -xzf - -C /opt &&\
+  http://download.oracle.com/otn-pub/java/jdk/${JAVA_VERSION_MAJOR}u${JAVA_VERSION_MINOR}-b${JAVA_VERSION_BUILD}/e9e7ea248e2c4826b92b3f075a80e441/${JAVA_PACKAGE}-${JAVA_VERSION_MAJOR}u${JAVA_VERSION_MINOR}-linux-x64.tar.gz \
+  | tar -xzf - -C /opt &&\
     ln -s /opt/${JAVA_PACKAGE}1.${JAVA_VERSION_MAJOR}.0_${JAVA_VERSION_MINOR} /opt/jdk &&\
     rm -rf /opt/jdk/*src.zip \
            /opt/jdk/lib/missioncontrol \

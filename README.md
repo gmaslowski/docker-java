@@ -6,6 +6,7 @@ docker-java
 
 ### Supported JDK versions
 - JDK8 - ```docker pull gmaslowski/jdk:8```
+ - JDK8u121 - ```docker pull gmaslowski/jdk:8u121```
  - JDK8u111 - ```docker pull gmaslowski/jdk:8u111```
  - JDK8u92 - ```docker pull gmaslowski/jdk:8u92```
  - JDK8u77 - ```docker pull gmaslowski/jdk:8u77```
@@ -16,6 +17,7 @@ docker-java
 
 ### Supported JRE versions
 - JRE8 - ```docker pull gmaslowski/jre:8```
+ - JRE8u121 - ```docker pull gmaslowski/jre:8u121```
  - JRE8u111 - ```docker pull gmaslowski/jre:8u111```
  - JRE8u92 - ```docker pull gmaslowski/jre:8u92```
  - JRE8u77 - ```docker pull gmaslowski/jre:8u77```
