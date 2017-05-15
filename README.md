@@ -4,7 +4,7 @@ docker-java
 ## Java Development Kit
 [https://hub.docker.com/r/gmaslowski/jdk/](https://hub.docker.com/r/gmaslowski/jdk/)
 
-### Supported JDK versions
+### Supported JDK versions [![](https://images.microbadger.com/badges/version/gmaslowski/jdk.svg)](https://microbadger.com/images/gmaslowski/jdk "Get your own version badge on microbadger.com")
 - JDK8 - ```docker pull gmaslowski/jdk:8```
  - JDK8u121 - ```docker pull gmaslowski/jdk:8u121```
  - JDK8u111 - ```docker pull gmaslowski/jdk:8u111```
