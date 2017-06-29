@@ -1,0 +1,16 @@
+sudo: required
+
+services:
+  - docker
+
+script:
+  - export TAG=gmaslowski/jdk:$TRAVIS_COMMIT
+  - docker run -it --rm -v "$(PWD)/jdk8/Dockerfile:/Dockerfile:ro" redcoolbeans/dockerlint
+  - docker build ./jdk8 -t $TAG
+
+after_success:
+  - export JAVA_VERSION_MINOR=`cat Dockerfile | grep "ENV JAVA_VERSION_MINOR" | awk '{print $3}'`
+  - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
+  - docker tag $TAG gmaslowski/jdk:8 gmaslowski/jdk:8u$JAVA_VERSION_MINOR
+  - test $TRAVIS_BRANCH = "master" && docker push gmaslowski/jdk:8
+  - test $TRAVIS_BRANCH = "master" && docker push gmaslowski/jdk:8u$JAVA_VERSION_MINOR
