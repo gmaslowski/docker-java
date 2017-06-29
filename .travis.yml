@@ -13,5 +13,7 @@ after_success:
   - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
   - docker tag $TAG gmaslowski/jdk:8 
   - docker tag $TAG gmaslowski/jdk:8u$JAVA_VERSION_MINOR
+  - docker tag $TAG gmaslowski/jdk:latest
   - test $TRAVIS_BRANCH = "master" && docker push gmaslowski/jdk:8
   - test $TRAVIS_BRANCH = "master" && docker push gmaslowski/jdk:8u$JAVA_VERSION_MINOR
+  - test $TRAVIS_BRANCH = "master" && docker push gmaslowski/jdk:latest
