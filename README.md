@@ -18,6 +18,7 @@ docker-java
 
 ### Supported JRE versions
 - JRE8 - ```docker pull gmaslowski/jre:8```
+ - JRE8u131 - ```docker pull gmaslowski/jre:8u131```
  - JRE8u121 - ```docker pull gmaslowski/jre:8u121```
  - JRE8u111 - ```docker pull gmaslowski/jre:8u111```
  - JRE8u92 - ```docker pull gmaslowski/jre:8u92```
