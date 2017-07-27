@@ -1,14 +1,14 @@
-# AlpineLinux 3.5 with a glibc-2.23 and Oracle JRE8
-FROM alpine:3.5
+# AlpineLinux 3.6 with a glibc-2.25 and Oracle JRE8
+FROM alpine:3.6
 MAINTAINER Greg Maslowski gregmaslowski@gmail.com
 
 # https://github.com/gliderlabs/docker-alpine/issues/11:
 # install glibc
 # hotfix /etc/nsswitch.conf
 RUN apk add --no-cache --virtual=build-dependencies wget ca-certificates && \
-    export ALPINE_GLIBC_BASE_URL="https://github.com/sgerrand/alpine-pkg-glibc/releases/download/2.23-r3" && \
-    export ALPINE_GLIBC_PACKAGE="glibc-2.23-r3.apk" && \
-    export ALPINE_GLIBC_BIN_PACKAGE="glibc-bin-2.23-r3.apk" && \
+    export ALPINE_GLIBC_BASE_URL="https://github.com/sgerrand/alpine-pkg-glibc/releases/download/2.25-r0" && \
+    export ALPINE_GLIBC_PACKAGE="glibc-2.25-r0.apk" && \
+    export ALPINE_GLIBC_BIN_PACKAGE="glibc-bin-2.25-r0.apk" && \
     wget "$ALPINE_GLIBC_BASE_URL/$ALPINE_GLIBC_PACKAGE" "$ALPINE_GLIBC_BASE_URL/$ALPINE_GLIBC_BIN_PACKAGE" && \
     apk add --no-cache --allow-untrusted "$ALPINE_GLIBC_PACKAGE" "$ALPINE_GLIBC_BIN_PACKAGE" && \
     /usr/glibc-compat/sbin/ldconfig "/lib" "/usr/glibc-compat/lib" && \    
