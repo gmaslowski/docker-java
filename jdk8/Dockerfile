@@ -1,5 +1,5 @@
-# AlpineLinux 3.5 with a glibc-2.23 and Oracle JDK8
-FROM alpine:3.5
+# AlpineLinux 3.6 with a glibc-2.23 and Oracle JDK8
+FROM alpine:3.6
 MAINTAINER Greg Maslowski gregmaslowski@gmail.com
 
 # https://github.com/gliderlabs/docker-alpine/issues/11:
