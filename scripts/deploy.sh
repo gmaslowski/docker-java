@@ -1,5 +1,7 @@
-export JDK_VERSION_MINOR=`cat jdk8/Dockerfile | grep "ENV JAVA_VERSION_MINOR" | awk '{print $3}'`
-export JRE_VERSION_MINOR=`cat jre8/Dockerfile | grep "ENV JAVA_VERSION_MINOR" | awk '{print $3}'`
+#!/bin/bash
+
+export JDK_VERSION_MINOR=$(grep -q "ENV JAVA_VERSION_MINOR" jdk8/Dockerfile | awk '{print $3}')
+export JRE_VERSION_MINOR=$(grep -q "ENV JAVA_VERSION_MINOR" jre8/Dockerfile | awk '{print $3}')
 
 docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
 
