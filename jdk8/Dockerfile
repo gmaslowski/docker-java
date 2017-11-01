@@ -21,10 +21,10 @@ RUN apk --update add curl ca-certificates tar
 
 # Java Version
 ENV JAVA_VERSION_MAJOR 8
-ENV JAVA_VERSION_MINOR 144
-ENV JAVA_VERSION_BUILD 01
+ENV JAVA_VERSION_MINOR 151
+ENV JAVA_VERSION_BUILD 12
 ENV JAVA_PACKAGE       jdk
-ENV HASH	       090f390dda5b47b9b721c7dfaa008135
+ENV HASH	       e758a0de34e24606bca991d704f6dcbf
 
 # Download and unarchive Java
 RUN mkdir /opt && curl -jksSLH "Cookie: oraclelicense=accept-securebackup-cookie"\
