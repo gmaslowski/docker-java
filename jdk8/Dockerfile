@@ -11,7 +11,7 @@ RUN apk add --no-cache --virtual=build-dependencies wget ca-certificates && \
     export ALPINE_GLIBC_BIN_PACKAGE="glibc-bin-2.27-r0.apk" && \
     wget "$ALPINE_GLIBC_BASE_URL/$ALPINE_GLIBC_PACKAGE" "$ALPINE_GLIBC_BASE_URL/$ALPINE_GLIBC_BIN_PACKAGE" && \
     apk add --no-cache --allow-untrusted "$ALPINE_GLIBC_PACKAGE" "$ALPINE_GLIBC_BIN_PACKAGE" && \
-    /usr/glibc-compat/sbin/ldconfig "/lib" "/usr/glibc-compat/lib" && \    
+    /usr/glibc-compat/sbin/ldconfig "/lib" "/usr/glibc-compat/lib" && \
     echo 'hosts: files mdns4_minimal [NOTFOUND=return] dns mdns4' >> /etc/nsswitch.conf && \
     apk del build-dependencies && \
     rm "$ALPINE_GLIBC_PACKAGE" "$ALPINE_GLIBC_BIN_PACKAGE"
