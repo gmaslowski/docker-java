@@ -1,10 +1,10 @@
 docker-java
 ===========
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/66c3e94bec91483f89cdc79e47141d29)](https://www.codacy.com/app/gmaslowski/docker-java?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=gmaslowski/docker-java&amp;utm_campaign=Badge_Grade)
+[![Build Status](https://travis-ci.org/gmaslowski/docker-java.svg?branch=master)](https://travis-ci.org/gmaslowski/docker-java)
 
 ## Java Development Kit
 [https://hub.docker.com/r/gmaslowski/jdk/](https://hub.docker.com/r/gmaslowski/jdk/)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/66c3e94bec91483f89cdc79e47141d29)](https://www.codacy.com/app/gmaslowski/docker-java?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=gmaslowski/docker-java&amp;utm_campaign=Badge_Grade)
-[![Build Status](https://travis-ci.org/gmaslowski/docker-java.svg?branch=master)](https://travis-ci.org/gmaslowski/docker-java)
 
 ### Supported JDK versions [![](https://images.microbadger.com/badges/version/gmaslowski/jdk.svg)](https://microbadger.com/images/gmaslowski/jdk "Get your own version badge on microbadger.com")
 * JDK8
