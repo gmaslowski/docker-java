@@ -3,11 +3,13 @@ sudo: required
 services:
   - docker
 
+before_script:
+  - docker run -it --rm -v "$(pwd)/jdk8/Dockerfile:/Dockerfile:ro" redcoolbeans/dockerlint
+  - docker run -it --rm -v "$(pwd)/jre8/Dockerfile:/Dockerfile:ro" redcoolbeans/dockerlint
+
 script:
   - export TAG_JDK=gmaslowski/jdk:$TRAVIS_COMMIT
   - export TAG_JRE=gmaslowski/jre:$TRAVIS_COMMIT
-  - docker run -it --rm -v "$(pwd)/jdk8/Dockerfile:/Dockerfile:ro" redcoolbeans/dockerlint
-  - docker run -it --rm -v "$(pwd)/jre8/Dockerfile:/Dockerfile:ro" redcoolbeans/dockerlint
   - docker build ./jdk8 -t $TAG_JDK
   - docker build ./jre8 -t $TAG_JRE
 
