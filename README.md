@@ -7,7 +7,8 @@ docker-java
 [![Build Status](https://travis-ci.org/gmaslowski/docker-java.svg?branch=master)](https://travis-ci.org/gmaslowski/docker-java)
 
 ### Supported JDK versions [![](https://images.microbadger.com/badges/version/gmaslowski/jdk.svg)](https://microbadger.com/images/gmaslowski/jdk "Get your own version badge on microbadger.com")
-- JDK8 - ```docker pull gmaslowski/jdk:8```
+- JDK8
+ - JDK8u161 - ```docker pull gmaslowski/jdk:8u161``` or ```docker pull gmaslowski/jdk:8``` or ```docker pull gmaslowski/jdk:latest```
  - JDK8u151 - ```docker pull gmaslowski/jdk:8u151```
  - JDK8u144 - ```docker pull gmaslowski/jdk:8u144```
  - JDK8u131 - ```docker pull gmaslowski/jdk:8u131```
@@ -21,7 +22,8 @@ docker-java
 [https://hub.docker.com/r/gmaslowski/jre/](https://hub.docker.com/r/gmaslowski/jre/)
 
 ### Supported JRE versions
-- JRE8 - ```docker pull gmaslowski/jre:8```
+- JRE8
+ - JRE8u161 - ```docker pull gmaslowski/jre:8u161``` or ```docker pull gmaslowski/jre:8``` or ```docker pull gmaslowski/jre:latest```
  - JRE8u151 - ```docker pull gmaslowski/jre:8u151```
  - JRE8u144 - ```docker pull gmaslowski/jre:8u144```
  - JRE8u131 - ```docker pull gmaslowski/jre:8u131```
