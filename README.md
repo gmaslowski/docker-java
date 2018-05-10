@@ -8,10 +8,12 @@ docker-java
 
 ### Supported JDK versions [![](https://images.microbadger.com/badges/version/gmaslowski/jdk.svg)](https://microbadger.com/images/gmaslowski/jdk "Get your own version badge on microbadger.com")
 * JDK8
-  * JDK8u161
-    * ```docker pull gmaslowski/jdk:8u161```
+  * JDK8u172
+    * ```docker pull gmaslowski/jdk:8u172```
     * ```docker pull gmaslowski/jdk:8```
     * ```docker pull gmaslowski/jdk:latest```
+  * JDK8u161
+    * ```docker pull gmaslowski/jdk:8u161```
   * JDK8u151
     * ```docker pull gmaslowski/jdk:8u151```
   * JDK8u144
@@ -34,10 +36,12 @@ docker-java
 
 ### Supported JRE versions [![](https://images.microbadger.com/badges/version/gmaslowski/jre.svg)](https://microbadger.com/images/gmaslowski/jre "Get your own version badge on microbadger.com")
 * JRE8
-  * JRE8u161
-    * ```docker pull gmaslowski/jre:8u161```
+  * JRE8u172
+    * ```docker pull gmaslowski/jre:8u172```
     * ```docker pull gmaslowski/jre:8```
     * ```docker pull gmaslowski/jre:latest```
+  * JRE8u161
+    * ```docker pull gmaslowski/jre:8u161```
   * JRE8u151
     * ```docker pull gmaslowski/jre:8u151```
   * JRE8u144
